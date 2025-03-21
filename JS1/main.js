@@ -2,6 +2,9 @@ const btn1 = document.getElementById("btn1");
 const btn2 = document.getElementById("btn2");
 const btn3 = document.getElementById("btn3");
 const btn4 = document.getElementById("btn4");
+const btn5 = document.getElementById("btn5");
+const btn6 = document.getElementById("btn6");
+
 
 const tbl = document.getElementById("tblNumbers");
 
@@ -75,6 +78,16 @@ btn4.addEventListener("click", () => {
     trTotal.appendChild(tdTotalValue);
     tbl.appendChild(trTotal);
 });
+
+btn5.addEventListener("click", () => {
+    
+    console.log("Highest Number: " + Math.max(numbersArr));
+    console.log("Lowest Number: " + Math.min(numbersArr));
+})
+
+btn6.addEventListener("click", () => {
+    
+})
 
 function deleteNumber(i) {
     numbersArr.splice(i,1);
